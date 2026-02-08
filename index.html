@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #121212; color: #FFFFFF; scroll-behavior: smooth; }
+        .font-serif-premium { font-family: 'Playfair Display', serif; }
+        .bento-card { background: #1A1A1A; border: 1px solid #2A2A2A; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .bento-card:hover { border-color: #FFFFFF; transform: translateY(-5px); }
+        .process-step:hover .step-number { color: #2563EB; transform: translateX(10px); }
+        .step-number { transition: all 0.4s ease; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="fixed w-full z-50 backdrop-blur-md border-b border-white/5 bg-[#121212]/80">
+        <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-2xl font-serif-premium tracking-tight italic font-bold">Caio Rocha<span class="text-blue-600">.</span></div>
+            <div class="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400">
+                <a href="#servicos" class="hover:text-white transition">Serviços</a>
+                <a href="#processo" class="hover:text-white transition">Processo</a>
+                <a href="#depoimentos" class="hover:text-white transition">Depoimentos</a>
+            </div>
+            <a href="https://wa.me/5573988071241" class="border border-white/20 px-6 py-2 rounded-full text-xs font-bold hover:bg-white hover:text-black transition-all text-center">ORÇAMENTO</a>
+        </nav>
+    </header>
+
+    <section class="pt-48 pb-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-blue-500 font-semibold tracking-[0.4em] text-[10px] uppercase mb-8">Designer de Estruturas de Alta Conversão</h2>
+            <h1 class="text-6xl md:text-[110px] font-serif-premium leading-[0.85] tracking-tighter mb-10">
+                SITES QUE <span class="italic font-light">CONVERTEM.</span><br>ESTRUTURAS QUE VENDEM.
+            </h1>
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+                <p class="text-gray-400 text-lg md:text-xl max-w-xl leading-relaxed">
+                    Design sem estratégia é custo. Aqui, cada pixel é planejado para gerar resultado e crescimento previsível para o seu negócio digital.
+                </p>
+                <a href="https://wa.me/5573988071241" class="inline-block bg-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-700 transition-all text-center">Falar com Caio Rocha</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 border-y border-white/5 bg-[#0F0F0F]">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center md:text-left">
+            <div><div class="text-4xl font-serif-premium mb-1">+50</div><div class="text-[9px] uppercase tracking-[0.2em] text-gray-500 font-bold">Projetos</div></div>
+            <div class="md:border-l md:border-white/10 md:pl-8"><div class="text-4xl font-serif-premium mb-1">98%</div><div class="text-[9px] uppercase tracking-[0.2em] text-gray-500 font-bold">Satisfação</div></div>
+            <div class="md:border-l md:border-white/10 md:pl-8"><div class="text-4xl font-serif-premium mb-1">R$1M+</div><div class="text-[9px] uppercase tracking-[0.2em] text-gray-500 font-bold">Faturados</div></div>
+            <div class="md:border-l md:border-white/10 md:pl-8"><div class="text-4xl font-serif-premium mb-1">12%</div><div class="text-[9px] uppercase tracking-[0.2em] text-gray-500 font-bold">Conv. Média</div></div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-2 bento-card p-12 rounded-[2.5rem]">
+                <h3 class="text-3xl font-serif-premium mb-4">Landing Pages de Elite</h3>
+                <p class="text-gray-400 max-w-sm mb-8 text-sm leading-relaxed">Páginas de vendas focadas em lançamentos, infoprodutos e ofertas perpétuas com alta taxa de retenção.</p>
+                <div class="h-1 w-20 bg-blue-600"></div>
+            </div>
+            <div class="bento-card p-12 rounded-[2.5rem]">
+                <h3 class="text-2xl font-serif-premium mb-4">Institucional</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">Posicionamento estratégico para empresas que buscam autoridade imediata no mercado.</p>
+            </div>
+            <div class="bento-card p-12 rounded-[2.5rem]">
+                <h3 class="text-2xl font-serif-premium mb-4 text-white">E-commerce</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">Lojas virtuais pensadas na jornada de compra e facilidade de conversão.</p>
+            </div>
+            <div class="md:col-span-2 bento-card p-12 rounded-[2.5rem] flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h3 class="text-2xl font-serif-premium mb-2 text-white">Performance & Tracking</h3>
+                    <p class="text-gray-400 text-xs">Otimização de velocidade e implementação de pixels/analytics para medir cada centavo investido.</p>
+                </div>
+                <a href="https://wa.me/5573988071241" class="bg-white text-black h-14 w-14 rounded-full flex items-center justify-center font-bold text-xl hover:bg-blue-600 hover:text-white transition-all">→</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="processo" class="py-32 px-6 bg-[#0F0F0F]">
+        <div class="max-w-4xl mx-auto text-center mb-20">
+            <h2 class="text-4xl md:text-5xl font-serif-premium italic">O Método para a Escala</h2>
+            <p class="text-gray-500 mt-4 uppercase text-[10px] tracking-widest font-bold">Transparência em cada etapa do seu projeto</p>
+        </div>
+        <div class="max-w-5xl mx-auto space-y-12">
+            <div class="process-step group flex flex-col md:flex-row items-start md:items-center gap-8 border-b border-white/5 pb-12">
+                <div class="step-number text-6xl font-serif-premium italic text-white/10 group-hover:text-blue-600">01</div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">Briefing & Imersão</h4>
+                    <p class="text-gray-400 text-sm max-w-lg">Entendimento profundo do seu negócio, público-alvo e objetivos de vendas antes do primeiro clique no Figma.</p>
+                </div>
+            </div>
+            <div class="process-step group flex flex-col md:flex-row items-start md:items-center gap-8 border-b border-white/5 pb-12">
+                <div class="step-number text-6xl font-serif-premium italic text-white/10 group-hover:text-blue-600">02</div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">Estratégia de Funil</h4>
+                    <p class="text-gray-400 text-sm max-w-lg">Definição da estrutura ideal: páginas, copy, integrações e onde o usuário deve agir.</p>
+                </div>
+            </div>
+            <div class="process-step group flex flex-col md:flex-row items-start md:items-center gap-8 border-b border-white/5 pb-12">
+                <div class="step-number text-6xl font-serif-premium italic text-white/10 group-hover:text-blue-600">03</div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">Design Premium (UI/UX)</h4>
+                    <p class="text-gray-400 text-sm max-w-lg">Criação do visual de alto padrão que transmite confiança e autoridade para o seu cliente final.</p>
+                </div>
+            </div>
+            <div class="process-step group flex flex-col md:flex-row items-start md:items-center gap-8 border-b border-white/5 pb-12">
+                <div class="step-number text-6xl font-serif-premium italic text-white/10 group-hover:text-blue-600">04</div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">Desenvolvimento Otimizado</h4>
+                    <p class="text-gray-400 text-sm max-w-lg">Transformamos o design em código rápido, limpo e preparado para receber tráfego em massa.</p>
+                </div>
+            </div>
+            <div class="process-step group flex flex-col md:flex-row items-start md:items-center gap-8 border-b border-white/5 pb-12 text-blue-500">
+                <div class="step-number text-6xl font-serif-premium italic text-blue-600">05</div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2 uppercase tracking-tighter text-white">Lançamento & Suporte</h4>
+                    <p class="text-gray-400 text-sm max-w-lg">Deploy, testes finais e o acompanhamento necessário para garantir que tudo performe como planejado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl font-serif-premium italic mb-4">Resultados Reais</h2>
+            <div class="flex justify-center gap-1 text-yellow-500 mb-2">★★★★★</div>
+            <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">Avaliação 5.0 no Google</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bento-card p-8 rounded-3xl">
+                <p class="text-gray-300 italic mb-6 leading-relaxed text-sm">"A Caio Rocha fez meu site e soube transmitir exatamente o que eu pedi! Amei o trabalho e indico para todos que perguntam. Entrega excelência desde o primeiro contato."</p>
+                <div class="font-bold text-xs uppercase tracking-widest text-white">Larissa Secundo</div>
+            </div>
+            <div class="bento-card p-8 rounded-3xl border-blue-500/20">
+                <p class="text-gray-300 italic mb-6 leading-relaxed text-sm">"Incrivelmente rápida na entrega, sem perder a qualidade. O resultado foi um trabalho impecável, bonito e muito profissional. Recomendo de olhos fechados!"</p>
+                <div class="font-bold text-xs uppercase tracking-widest text-white">Thales Santos</div>
+            </div>
+            <div class="bento-card p-8 rounded-3xl">
+                <p class="text-gray-300 italic mb-6 leading-relaxed text-sm">"Muito bom o trabalho, atento aos detalhes, suporte de altíssima qualidade. Super indico!"</p>
+                <div class="font-bold text-xs uppercase tracking-widest text-white">Joao Mompiam</div>
+            </div>
+            <div class="bento-card p-8 rounded-3xl">
+                <p class="text-gray-300 italic mb-6 leading-relaxed text-sm">"Criou o site do jeitinho que eu pedi, tirou todas as minhas dúvidas e entregou tudo muito rápido. Recomendo muito!"</p>
+                <div class="font-bold text-xs uppercase tracking-widest text-white">Jennifer Cristine</div>
+            </div>
+            <div class="bento-card p-8 rounded-3xl">
+                <p class="text-gray-300 italic mb-6 leading-relaxed text-sm">"Resultado ficou perfeito, com as cores escolhidas que combinam perfeitamente com a marca. Ficou top!!"</p>
+                <div class="font-bold text-xs uppercase tracking-widest text-white">Lucas Panissa</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-32 border-t border-white/5 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
+            <div class="max-w-xs">
+                <div class="text-3xl font-serif-premium italic mb-6">Caio Rocha<span class="text-blue-600">.</span></div>
+                <p class="text-gray-500 text-sm leading-relaxed mb-8">Especialista em estruturas digitais de alta performance. Deixe o genérico para a concorrência.</p>
+                <div class="flex gap-6">
+                    <a href="https://www.linkedin.com/in/caio-rocha-990727abc/" class="text-xs font-bold uppercase tracking-widest hover:text-blue-500">LinkedIn</a>
+                    <a href="https://www.behance.net/caioaarte" class="text-xs font-bold uppercase tracking-widest hover:text-blue-500">Behance</a>
+                </div>
+            </div>
+            <div class="bg-[#1A1A1A] p-10 rounded-[2.5rem] w-full md:w-auto text-center border border-white/5">
+                <h4 class="text-2xl font-serif-premium italic mb-6">Pronto para o próximo nível?</h4>
+                <a href="https://wa.me/5573988071241" class="block bg-blue-600 text-white px-12 py-5 rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-900/10">SOLICITAR ORÇAMENTO</a>
+                <p class="mt-6 text-gray-600 text-[10px] tracking-widest uppercase font-bold">xxcaio42@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
